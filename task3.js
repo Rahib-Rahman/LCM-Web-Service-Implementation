@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
     const query = parsedUrl.query;
 
     // Check if the request is for the LCM endpoint
-    if (pathname === '/lcm/rrahib778_gmail_com') {
+    if (pathname === '/app/rrahib778_gmail_com') {
         // Get x and y from query parameters
         const xStr = query.x;
         const yStr = query.y;
