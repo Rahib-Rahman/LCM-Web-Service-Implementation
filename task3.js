@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
     const query = parsedUrl.query;
 
     // Check if the request is for the LCM endpoint
-    if (pathname === '/lcm/rrahib778_gmail_com') {
+    if (pathname === '/app/rrahib778_gmail_com') {
         // Get x and y from query parameters
         const x = parseInt(query.x, 10);
         const y = parseInt(query.y, 10);
@@ -58,5 +58,5 @@ const server = http.createServer((req, res) => {
 // Start the server on port 3000 http://localhost:${PORT}
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-    console.log(`LCM Service running at http://localhost:3000/app/rrahib778_gmail_com?x={}&y={}`);
+    console.log(`LCM Service running at http://localhost:${PORT}/app/rrahib778_gmail_com?x={}&y={}`);
 });
