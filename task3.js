@@ -55,8 +55,8 @@ const server = http.createServer((req, res) => {
     }
 });
 
-// Start the server on port 3000
+// Start the server on port 3000 http://localhost:${PORT}
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-    console.log(`LCM Service running at http://localhost:3000/lcm/rrahib778_gmail_com?x=94906297&y=94906299`);
+    console.log(`LCM Service running at http://localhost:3000/app/rrahib778_gmail_com?x={}&y={}`);
 });
